@@ -60,7 +60,7 @@ The pipeline is as follows:
     was to export this data into a CSV file. This CSV would then be used for further analysis
     in our ML project.
 3) *Data Exploration*: First we perform some EDA to see the number of videos being assessed. We then analyze commonly appearing words in the comment data using wordcloud and the word frequency plot, which gives us a fair idea of the topoccurring words
-4) *PCA Analysis*: Using PCA, we try and see how the videos align themselves on a scatter plot with just the first 2 components. Here each dot is a unique video which is described by all the comments it received and converted into a 300-dimension vector (but we are only visualizing the first 2 components here).
+4) *PCA Analysis*: Using PCA, we try and see how the videos align themselves on a scatter plot with just the first 2 components. Here each dot was a unique video which is described by all the comments it received and converted into a 300-dimension vector (but we are only visualizing the first 2 components here).
 5) *Classifier Models*: This was followed by using 3 separate algorithms to see if we can classify our videos just based on their comments (using the first 100 components from the doc2vec embedding which we trained on our dataset itself)
 Models used (Results obtained in [Report](https://github.com/Omkar-08/YouTube-Comment-Analyzer/blob/main/comment_analyzer/Report.pdf)):
     - Logistic Regression
