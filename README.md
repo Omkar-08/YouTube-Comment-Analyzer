@@ -53,7 +53,7 @@ The pipeline is as follows:
     - Duplicate Prevention: To ensure the integrity of our data and avoid duplication, we implemented measures within our code to avoid processing a video more than once. Before scraping we first check to determine if that video has already been analyzed. This precautionary step prevented redundant scraping efforts and maintained the accuracy of our dataset.
 
 2) *SQL Database Integration*: To streamline the management and analysis of the scraped YouTube comments data, we created and stored the scraped data into SQL database. Here is a breakdown of how we went about structuring our database:
-    - Mapping Genre to Category ID: To bring uniformity to our database, we linked each video’s genre to a specificcategory_id. The mapping involved assigning unique identifiers to genres, to make it easier to perform genre-specific queries.
+    - Mapping Genre to Category ID: To bring uniformity to our database, we linked each video’s genre to a specific category_id. The mapping involved assigning unique identifiers to genres, to make it easier to perform genre-specific queries.
     - HTML File Processing and Data Insertion: Upon parsing each HTML file containing scraped comments, we extracted comment text, likes, genre, keyword, and video ID. Using BeautifulSoup, we processed the files to extract critical information such as comment text, number of likes per comment, genre,
     etc. which were then stored in an SQL table.
     - Exporting Data to CSV: Once all scraped comments were successfully stored in the SQL database, the final step
